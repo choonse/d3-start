@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import * as d3 from 'd3';
 
-
 const DATA = [
   {x: 10, y: 20},
   {x: 30, y: 40},
@@ -12,19 +11,7 @@ const DATA = [
 
 const App = () =>{
 
-  // useEffect(()=>{
-  //   d3.select(".target").style("stroke-width",3);
-  // },[]);
-
-  // const changeStroke = () => {
-  //   d3.select(".target").style("stroke-width",3);
-  // }
-
   useEffect(()=>{
-    // const svg = d3.select("#area");
-    // svg.append("circle").attr("cx",50).attr("cy",50).attr("r",40).style("fill","blue");
-    // svg.append("circle").attr("cx",140).attr("cy",70).attr("r",40).style("fill","green");
-    // svg.append("circle").attr("cx",230).attr("cy",95).attr("r",40).style("fill","red");
 
     const margin = { top:10, right:40, bottom:30, left:30 },
     width=450 - margin.left - margin.right,
@@ -46,10 +33,7 @@ const App = () =>{
 
   return (
     <div className="App">
-      {/* <button onClick={changeStroke} >change</button> */}
       <svg id="area" height={400} width={500}>
-        {/* <circle class="target" style={{fill:"orange"}} stroke="black" cx={50} cy={50} r={40}>
-        </circle> */}
       </svg>
     </div>
   )
